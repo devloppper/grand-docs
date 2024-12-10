@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "博客网址"
+  name: "Grand-Docs"
   text: "技术留痕 厚积薄发"
-  tagline: 暂时懒得装修门面
+  tagline: "作者:jayhoozone@163.com"
 #  actions:
 #    - theme: brand
 #      text: Markdown Examples

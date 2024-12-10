@@ -2,7 +2,7 @@ import {defineConfig} from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "阿巴巴巴的博客",
+  title: "博客",
   description: "技术留痕 厚积薄发",
 
   themeConfig: {

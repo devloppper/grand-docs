@@ -4,7 +4,7 @@ import {defineConfig} from 'vitepress'
 export default defineConfig({
   title: "博客",
   description: "技术留痕 厚积薄发",
-
+  cleanUrls: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [

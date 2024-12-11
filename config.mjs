@@ -52,6 +52,21 @@ export default defineConfig({
               ]
             }
           ]
+        },
+        {
+            text: "中间件",
+            items: [
+                {
+                    text: "etcd",
+                    link: "/tech/etcd",
+                    items: [
+                        {
+                            text: "Docker安装etcd",
+                            link: "/tech/etcd/docker.md"
+                        }
+                    ]
+                }
+            ]
         }
       ],
     },

@@ -9,6 +9,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       {text: '技术文档', link: '/tech'},
+      {text:'项目', link: "/project"},
       {
         text: '站内跳转',
         items: [
@@ -69,6 +70,14 @@ export default defineConfig({
             ]
         }
       ],
+      "/project/": [
+        {
+          text: '业余工具',
+          items: [
+            {text: '安卓自动滑屏幕', link: '/project/other/android-swipe.md'},
+          ]
+        },
+      ]
     },
 
     socialLinks: [

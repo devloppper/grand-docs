@@ -29,17 +29,20 @@ mkdir -p $CONFIG_DIR && cd $CONFIG_DIR
 touch conf.yml
 ```
 
-> conf.yml 的主要内容如下
->
-> name: etcd-3
-> data-dir: /var/etcd/data
-> listen-client-urls: http://0.0.0.0:2379
-> advertise-client-urls: http://192.168.9.83:2379
-> listen-peer-urls: http://0.0.0.0:2380
-> initial-cluster-token: etcd-cluster
-> initial-cluster-state: new
-> logger: zap
-> log-level: info
+```yaml
+#conf.yml 的主要内容如下
+name: etcd-3
+data-dir: /var/etcd/data
+listen-client-urls: http://0.0.0.0:2379
+advertise-client-urls: http://192.168.9.83:2379
+listen-peer-urls: http://0.0.0.0:2380
+initial-cluster-token: etcd-cluster
+initial-cluster-state: new
+logger: zap
+log-level: info
+```
+
+
 
 其中要注意，数据目录设置后，要和Docker容器启动挂载目录对应，也就是宿主机器的`$DATA_DIR`。
 

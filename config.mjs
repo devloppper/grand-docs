@@ -12,19 +12,20 @@ export default defineConfig({
         nav: [
             {text: '技术文档', link: '/tech'},
             {text: '项目', link: "/project"},
-            {
-                text: '站内跳转',
-                items: [
-                    {
-                        text: "主站",
-                        link: "https://www.hujye.com",
-                    },
-                    {
-                        text: "Kibana",
-                        link: "https://kibana.hujye.com",
-                    },
-                ]
-            },
+            {text: '主站', link: "https://www.hujye.com"},
+            // {
+            //     text: '站内跳转',
+            //     items: [
+            //         {
+            //             text: "主站",
+            //             link: "https://www.hujye.com",
+            //         },
+            //         {
+            //             text: "Kibana",
+            //             link: "https://kibana.hujye.com",
+            //         },
+            //     ]
+            // },
 
         ],
 
@@ -33,7 +34,7 @@ export default defineConfig({
                 {
                     text: '编程语言',
                     items: [
-                        {text: 'Golang', link: '/tech/goland'},
+                        {text: 'Golang', link: '/tech/golang'},
                         {text: 'Rust', link: '/tech/rust'}
                     ]
                 },
@@ -70,6 +71,15 @@ export default defineConfig({
                             ]
                         }
                     ]
+                },
+                {
+                    text: "组件",
+                    items: [
+                        {
+                            text: "Excel",
+                            link: "/tech/excel"
+                        }
+                    ]
                 }
             ],
             "/project/": [
@@ -79,6 +89,14 @@ export default defineConfig({
                         {text: '安卓自动滑屏幕', link: '/project/other/android-swipe.md'},
                     ]
                 },
+            ],
+            "/tech/golang": [
+                {
+                    text: "Golang",
+                    items: [
+                        {text: '语法', link: '/tech/golang/grammar'},
+                    ]
+                }
             ]
         },
 

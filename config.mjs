@@ -34,8 +34,8 @@ export default defineConfig({
                 {
                     text: '基础语法',
                     items: [
-                        {text: '基本', link: '/golang/basic-grammar'},
-                        {text: '高级', link: '/golang/advanced-grammar'},
+                        {text: '基本', link: '/golang/grammar-basic'},
+                        {text: '高级', link: '/golang/grammar-advance'},
                         {text: '版本特性', link: '/golang/feature'},
                     ]
                 },

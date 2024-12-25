@@ -10,7 +10,7 @@ export default defineConfig({
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         nav: [
-            {text: '技术文档', link: '/tech'},
+            {text: '目录', link: '/catalogue'},
             {text: '项目', link: "/project"},
             {text: '主站', link: "https://www.hujye.com"},
             // {
@@ -30,55 +30,43 @@ export default defineConfig({
         ],
 
         sidebar: {
-            "/tech/": [
+            "/golang/": [
                 {
-                    text: '编程语言',
+                    text: '基础语法',
                     items: [
-                        {text: 'Golang', link: '/tech/golang'},
-                        {text: 'Rust', link: '/tech/rust'}
+                        {text: '基本', link: '/golang/basic-grammar'},
+                        {text: '高级', link: '/golang/advanced-grammar'},
+                        {text: '版本特性', link: '/golang/feature'},
                     ]
                 },
                 {
-                    text: "数据库",
+                    text: '三方包',
                     items: [
-                        {
-                            text: 'MySQL',
-                            link: "/tech/mysql",
-                            items: [
-                                {
-                                    text: "Docker安装MySQL",
-                                    link: "/tech/mysql/docker.md"
-                                },
-                                {
-                                    text: "Golang-Gorm",
-                                    link: "/tech/mysql/gorm.md"
-                                }
-                            ]
-                        }
+                        { text: "gorm", link: '/golang/gorm'},
+                        { text: "excelize", link: '/golang/excelize'}
+                    ]
+                }
+            ],
+            "/excel/": [
+                {
+                    text: "openXML",
+                    items: [
+                        { text: "基础", link :"/excel/openXML-basic"}
+                    ]
+                }
+            ],
+            "/docker/": [
+                {
+                    text: "基本使用",
+                    items: [
+                        { text: "安装", link :"/docker/install"}
                     ]
                 },
                 {
-                    text: "中间件",
+                    text: "容器部署示例",
                     items: [
-                        {
-                            text: "etcd",
-                            link: "/tech/etcd",
-                            items: [
-                                {
-                                    text: "Docker安装etcd",
-                                    link: "/tech/etcd/docker.md"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    text: "组件",
-                    items: [
-                        {
-                            text: "Excel",
-                            link: "/tech/excel"
-                        }
+                        { text: "MySQL", link: "/docker/deploy-mysql"},
+                        { text: "Etcd", link: "/docker/deploy-etcd"}
                     ]
                 }
             ],
@@ -90,14 +78,7 @@ export default defineConfig({
                     ]
                 },
             ],
-            "/tech/golang": [
-                {
-                    text: "Golang",
-                    items: [
-                        {text: '语法', link: '/tech/golang/grammar'},
-                    ]
-                }
-            ]
+
         },
 
         socialLinks: [

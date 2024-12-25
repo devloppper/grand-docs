@@ -1,4 +1,5 @@
-# Docker安装MySQL
+# mysql的Docker部署
+
 
 安装`MySQL:8`
 
@@ -48,6 +49,3 @@ docker run -d \
 docker exec -it mysql /bin/sh
 > mysql -u root -p
 ```
-
-
-

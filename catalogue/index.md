@@ -7,7 +7,7 @@
 3. [Shell](../shell/index.md)
 
 ## App开发
-1. [Java](../android/index.md)
+1. [Android](../android/index.md)
 
 ## 运维
 1. [Docker](../docker/index.md)

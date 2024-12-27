@@ -8,7 +8,29 @@ export default defineConfig({
     head: [['link', {rel: 'icon', href: '/favicon.ico'}]],
     lang: 'zh-cn',
     themeConfig: {
-        // https://vitepress.dev/reference/default-theme-config
+        search: {
+            provider: 'local',
+            options: {
+                locales: {
+                    root: { //这里是个大坑，zh是不生效的，改为root即可
+                        translations: {
+                            button: {
+                                buttonText: '搜索',
+                                buttonAriaLabel: '搜索文档'
+                            },
+                            modal: {
+                                noResultsText: '无法找到相关结果',
+                                resetButtonTitle: '清除查询条件',
+                                footer: {
+                                    selectText: '选择',
+                                    navigateText: '切换'
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         nav: [
             {text: '目录', link: '/catalogue'},
             {text: '项目', link: "/project"},

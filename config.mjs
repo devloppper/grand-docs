@@ -73,7 +73,8 @@ export default defineConfig({
                 {
                     text: "openXML",
                     items: [
-                        { text: "基础", link :"/excel/openXML-basic"}
+                        { text: "基础", link :"/excel/openXML-basic"},
+                        { text: "sheet", link :"/excel/sheet"}
                     ]
                 }
             ],
